@@ -1,3 +1,5 @@
 {
-    "tsx": "preserve"
-}
+    "compilerOptions": {
+      "jsx": "react"
+    }
+  }
