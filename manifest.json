@@ -1,0 +1,23 @@
+{
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "name": "React Chrome Extension",
+    "action": {
+        "default_popup": "./dist/js/index.html",
+        "default_title": "React Chrome Extension"
+    },
+    "icon": [
+        {
+          "src": "icon.png",
+          "sizes": "96x96",
+          "type": "./src.components/icon.png"
+        }
+      ],
+    "content_scripts": [
+        {
+            "matches": ["*://www.google.com/*"],  
+            "tsx": ["./components/content.tsx"],
+            "css": ["App.css"]
+        }
+    ]
+}
