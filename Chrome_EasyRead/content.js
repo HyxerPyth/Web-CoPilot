@@ -40,7 +40,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 
 
-// GPT REQUEST 
+// GPT REQUEST OPEN AI
 
 async function gptRequest(textHTML) {
   try {
@@ -48,7 +48,7 @@ async function gptRequest(textHTML) {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
+        "Authorization": " YOUR OPEN AI KEY"
       },
       body: JSON.stringify({
         model: 'gpt-3.5-turbo',
